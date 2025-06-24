@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom theme configuration for Tailwind CSS v4 */
+@theme {
+  --color-neutral-bg: #171717; /* Very dark for body background (Dark theme) */
+  --color-neutral-obj: #262626; /* Slightly lighter for objects (Dark theme) */
+  --color-pale-gold: #DAA520; /* Pale gold for primary text/accents */
+  --color-neutral-light-bg: #F5F5F5; /* Very light for body background (Light theme) */
+  --color-neutral-light-obj: #E0E0E0; /* Slightly darker for objects (Light theme) */
+  --color-neutral-dark-text: #333333; /* Dark text for light theme */
+  --color-neutral-light-text-secondary: #6B7280; /* Secondary dark text for light theme */
+
+  /* Ensure font-family is set here to be controlled by Tailwind or your app */
+  /* If you want to use 'Inter' for example, you can define it here. */
+  /* For now, sticking to system-ui as a generic sans-serif fallback if not specified by Tailwind config */
+  /* --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+}
+
+/* Custom scrollbar for a smoother look */
+html {
+  scroll-behavior: smooth;
+  /* Ensure these base font settings are not overridden by Vite's defaults */
+  font-family: var(--font-sans, 'Inter', sans-serif); /* Use 'Inter' if defined in Tailwind config, fallback to system-ui */
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-obj); /* Use custom variable */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-pale-gold); /* Use custom variable */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pale-gold); /* Use custom variable */
+  filter: brightness(1.2); /* Slightly brighter on hover */
+}
+
+/* Base styles for body - controlled by theme context via the 'dark' class on html */
+body {
+  margin: 0; /* Remove default body margin */
+  /* Remove flex properties as the app component will handle layout */
+  /* display: flex; */
+  /* place-items: center; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+}
+
+/* Global background and text color based on theme */
+html.light body {
+  background-color: var(--color-neutral-light-bg);
+  color: var(--color-neutral-dark-text);
+}
+
+html.dark body {
+  background-color: var(--color-neutral-bg);
+  color: var(--color-white); /* Use Tailwind's default white or define a --color-white in theme */
+}
+/* Base styles that depend on theme variables */
