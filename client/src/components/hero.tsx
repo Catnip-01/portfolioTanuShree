@@ -14,7 +14,7 @@ const Hero = () => (
             <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, type: 'spring', stiffness: 100, delay: 0.4 }} className="flex-1 flex justify-center items-center">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-pale-gold">
                     {/* Ensure this image path is correct relative to where the app is served */}
-                    <img src="/AmbuPortfolio.jpeg" alt="Developer Profile Placeholder" className="w-full h-full object-cover" />
+                    <img src="/AmbuSpeech.jpeg" alt="Developer Profile Placeholder" className="w-full h-full object-cover" />
                 </div>
             </motion.div>
         </div>
