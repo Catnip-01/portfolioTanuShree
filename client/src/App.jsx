@@ -10,6 +10,7 @@ import Hero from './components/hero';
 import Projects from './components/projects';
 import Education from './components/education';
 import Skills from './components/skills';
+import Resume from './components/resume';
 
 // --- CONTEXT & HOOK ---
 // In a real multi-file app, this would be in 'src/context/ThemeProvider.jsx' and 'src/hooks/useTheme.js'
@@ -60,7 +61,7 @@ const ThemeToggle = () => {
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navItems = [ { name: 'Projects', href: '#projects' }, { name: 'Skills', href: '#skills' }, { name: 'Education', href: '#education' }, { name: 'Contact', href: '#contact' }];
+    const navItems = [ { name: 'Projects', href: '#projects' }, { name: 'Skills', href: '#skills' }, { name: 'Education', href: '#education' }, { name: 'Contact', href: '#contact' }, {name: 'Resume', href: '#resume'}];
     return (
         <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="fixed top-0 left-0 right-0 z-50 p-4 shadow-lg backdrop-blur-sm bg-opacity-80 dark:bg-neutral-obj/80 dark:shadow-neutral-900/50 light:bg-white/80 light:shadow-slate-300/40">
             <div className="container mx-auto flex justify-between items-center px-4">
@@ -91,6 +92,8 @@ function App() {
             <Skills />
             <Education />
             <Contact />
+            <Resume />
+            <Footer />
           </div>
       </div>
     </ThemeProvider>
