@@ -68,7 +68,7 @@ const Header = () => {
                 <a href="#hero" className="text-pale-gold text-2xl font-bold rounded-md px-2 py-1 transition duration-300 ease-in-out hover:scale-105">SP</a>
                 <div className="hidden md:flex items-center space-x-6">
                     {navItems.map((item) => <motion.a key={item.name} href={item.href} className="text-pale-gold hover:text-slate-900 dark:hover:text-white transition duration-300 font-medium relative group" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>{item.name}<span className="absolute left-0 -bottom-1 w-full h-0.5 bg-pale-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span></motion.a>)}
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
                 </div>
                 <div className="md:hidden flex items-center">
                     <ThemeToggle />
