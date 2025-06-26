@@ -5,7 +5,7 @@ import Button from './button'; // Assuming Button.jsx is in the same directory o
 
 const Hero = () => (
     <section id="hero" className="h-screen w-screen flex items-center justify-center snap-start relative px-4">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left pl-10 gap-12">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left sm:pl-10 gap-12">
             {/* On small screens, this will be the first item (image) */}
             {/* On medium/large screens, this will be the second item (image) */}
             <motion.div 
