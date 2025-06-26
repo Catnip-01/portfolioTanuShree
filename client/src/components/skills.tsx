@@ -44,7 +44,7 @@ const skillsData = [
 
 const SkillCard = ({ name, icon, delay }) => (
   <motion.div 
-    className="flex items-center p-4 rounded-xl shadow-lg bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 hover:border-pale-gold transition-all duration-300 cursor-pointer"
+    className="flex items-center p-4 rounded-xl shadow-lg bg-neutral-800 dark:bg-neutral-800 border border-neutral-900 hover:border-pale-gold transition-all duration-300 cursor-pointer"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}

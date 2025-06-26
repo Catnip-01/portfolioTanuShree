@@ -48,7 +48,7 @@ const Contact = () => {
                     Contact Me
                 </motion.h2>
                 <motion.div
-                    className="w-full max-w-2xl mx-auto p-8 rounded-xl shadow-lg dark:bg-neutral-obj dark:border dark:border-neutral-700 light:bg-white light:border light:border-slate-200"
+                    className="w-full max-w-2xl mx-auto p-8 rounded-xl shadow-lg  bg-neutral-obj border border-neutral-700"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -63,7 +63,7 @@ const Contact = () => {
                                 name="user_name" // Matches formData.user_name
                                 value={formData.user_name} // Uses formData.user_name
                                 onChange={handleChange}
-                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold dark:bg-neutral-bg dark:border dark:border-neutral-700 dark:text-white light:bg-slate-50 light:border light:border-slate-300 light:text-slate-800"
+                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold  bg-neutral-bg  border  border-neutral-700  text-white light:bg-slate-50  "
                                 placeholder="Your Name"
                                 required
                             />
@@ -76,7 +76,7 @@ const Contact = () => {
                                 name="user_email" // Matches formData.user_email
                                 value={formData.user_email} // Uses formData.user_email
                                 onChange={handleChange}
-                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold dark:bg-neutral-bg dark:border dark:border-neutral-700 dark:text-white light:bg-slate-50 light:border light:border-slate-300 light:text-slate-800"
+                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold  bg-neutral-bg  border  border-neutral-700  text-white light:bg-slate-50  "
                                 placeholder="your.email@example.com"
                                 required
                             />
@@ -89,7 +89,7 @@ const Contact = () => {
                                 value={formData.message} // Uses formData.message
                                 onChange={handleChange}
                                 rows="4"
-                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold resize-y dark:bg-neutral-bg dark:border dark:border-neutral-700 dark:text-white light:bg-slate-50 light:border light:border-slate-300 light:text-slate-800"
+                                className="w-full p-3 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pale-gold resize-y  bg-neutral-bg  border  border-neutral-700  text-white light:bg-slate-50  "
                                 placeholder="Your message..."
                                 required
                             ></textarea>

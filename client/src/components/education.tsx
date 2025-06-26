@@ -7,11 +7,11 @@ const educationDetails = [
 ];
 
 const EducationCard = ({ degree, institution, years, description, delay }) => (
-    <motion.div className="p-6 rounded-xl shadow-lg dark:bg-neutral-obj dark:border dark:border-neutral-700 light:bg-white light:border light:border-slate-200" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.6, delay: delay }} whileHover={{ y: -5, scale: 1.02 }}>
+    <motion.div className="p-6 rounded-xl shadow-lg bg-neutral-obj border border-neutral-700" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.6, delay: delay }} whileHover={{ y: -5, scale: 1.02 }}>
         <h3 className="text-pale-gold text-2xl font-semibold mb-2">{degree}</h3>
         <p className="text-lg mb-1 text-inherit">{institution}</p>
-        <p className="text-sm mb-3 dark:text-gray-400 light:text-slate-500">{years}</p>
-        <p className="text-base dark:text-gray-300 light:text-slate-700">{description}</p>
+        <p className="text-sm mb-3 text-gray-400 ">{years}</p>
+        <p className="text-base text-gray-300 ">{description}</p>
     </motion.div>
 );
 

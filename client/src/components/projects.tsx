@@ -21,7 +21,7 @@ const ProjectCard = ({ title, description, tags, link }) => (
         <h3 className="text-pale-gold text-2xl font-semibold mb-3">{title}</h3>
         {/* 'text-neutral-dark-text' will be light theme text, then switch to white in dark theme */}
         {/* 'text-neutral-light-text-secondary' is used for the description's dark mode color */}
-        <p className="text-base mb-4 text-neutral-dark-text dark:text-neutral-light-text-secondary">{description}</p>
+        <p className="text-base mb-4 text-neutral-light-text-secondary">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
             {tags.map((tag) => (
                 <span key={tag} className="text-sm px-3 py-1 rounded-full border
@@ -45,7 +45,7 @@ const Projects = () => (
         <motion.h2 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} className="text-pale-gold text-5xl font-extrabold mb-12 text-center drop-shadow-lg">My Projects</motion.h2>
         <div className="w-full max-w-7xl relative">
             <div className="flex overflow-x-auto snap-x snap-mandatory pb-8 space-x-6 no-scrollbar">{projectsData.map((project, index) => <ProjectCard key={index} {...project} />)}</div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center text-xs mt-2 dark:text-gray-500 light:text-slate-400">Scroll →</div>
+            {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center text-xs mt-2 dark:text-gray-500 light:text-slate-400">Scroll →</div> */}
         </div>
     </section>
 );
