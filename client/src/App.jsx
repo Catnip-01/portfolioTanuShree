@@ -61,7 +61,7 @@ const ThemeToggle = () => {
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navItems = [ { name: 'Projects', href: '#projects' }, { name: 'Skills', href: '#skills' }, { name: 'Education', href: '#education' }, { name: 'Contact', href: '#contact' }, {name: 'Resume', href: '#resume'}];
+    const navItems = [ { name: 'Projects', href: '#projects' }, { name: 'Skills', href: '#skills' }, { name: 'Education', href: '#education' }, { name: 'Contact', href: '#contact' }, {name: 'Resume', href: '#resume'}, {name: 'Social', href: '#footer'}];
     return (
         <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="fixed top-0 left-0 right-0 z-50 p-4 shadow-lg backdrop-blur-sm bg-opacity-80   bg-neutral-obj/80   shadow-neutral-900/50 ">
             <div className="container mx-auto flex justify-between items-center px-4">
