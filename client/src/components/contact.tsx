@@ -17,9 +17,9 @@ const Contact = () => {
         e.preventDefault();
         setStatus('submitting');
 
-        const SERVICE_ID = 'service_m9rj186';
-        const TEMPLATE_ID = 'template_76omgcu';
-        const PUBLIC_KEY = 'QZuFpMbatlzzFGfpK';
+        const SERVICE_ID = 'service_zyr6dan';
+        const TEMPLATE_ID = 'template_9s4gsdi';
+        const PUBLIC_KEY = '8Kv3MClBumarpmlCQ';
 
         try {
             await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY);

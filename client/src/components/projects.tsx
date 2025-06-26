@@ -3,10 +3,42 @@ import { section, h2, div, map } from "framer-motion/client";
 
 
 const projectsData = [
-    { title: 'Awaaz-AI', description: 'A chatbot platform offering legal and trauma support for women, featuring a fine-tuned Gemini model and secure, anonymous social sharing.', tags: ['MERN', 'Google Cloud', 'JWT', 'Gemini'], link: 'https://awaaz-ai.vercel.app/' },
-    { title: 'Online Clipboard', description: 'A MERN stack application to efficiently manage, retrieve, and share text snippets with access codes and one-click copying.', tags: ['MERN', 'MongoDB', 'Node.js'], link: 'https://onlineclippings.vercel.app/' },
-    { title: 'Resume Maker', description: 'A dynamic resume-building website that generates downloadable PDFs from user inputs, drastically reducing creation time.', tags: ['React', 'CSS', 'JavaScript', '@react-pdf/renderer'], link: 'https://start-resume.vercel.app/' },
-    { title: 'Gesture Controlled Drone', description: 'A drone controlled by hand gestures, using a custom-trained YOLOv8 model and the Robot Operating System (ROS).', tags: ['Python', 'YOLOv8', 'ROS', 'OpenCV'], link: 'https://github.com/Catnip-01/pluto-drone' },
+    {
+        title: 'Hand Gesture Controlled Drone System',
+        description: 'Developed a hand gesture controlled drone system, trained over 8000 images with over 95% accuracy for object detection.',
+        tags: ['Python', 'Object Detection', 'YOLO v8', 'ROS', 'Computer Vision'],
+        link: 'https://github.com/tanu-04/your-drone-repo' // Placeholder: Please update with your actual GitHub link if available
+    },
+    {
+        title: 'Awaaz-AI',
+        description: 'Developed a chatbot platform providing legal assistance and trauma support for women, assisting over 500 users by leveraging AI and NLP for secure and empathetic interactions.',
+        tags: ['Google Cloud Services', 'Google Gemini', 'AI', 'NLP', 'Chatbot'],
+        link: 'https://awaaz-ai.vercel.app/' // Assuming this is the correct link from your original code
+    },
+    {
+        title: 'Color Space Optimization',
+        description: 'A project focused on optimizing color spaces, likely involving image processing techniques.',
+        tags: ['K-Means clustering', 'Python', 'matplotlib', 'Image Processing'],
+        link: 'https://github.com/tanu-04/your-color-space-optimization-repo' // Placeholder: Please update with your actual GitHub link if available
+    },
+    {
+        title: 'Carpool Website',
+        description: 'A web-based application for carpooling, likely involving user management, route planning, and ride sharing functionalities.',
+        tags: ['Web Development', 'Carpool', 'Frontend', 'Backend'], // Assuming typical web dev technologies
+        link: 'https://github.com/tanu-04/your-carpool-website-repo' // Placeholder: Please update with your actual GitHub link if available
+    },
+    {
+        title: 'Anomaly Detection System',
+        description: 'Developed a system for identifying unusual patterns or outliers in data.',
+        tags: ['Machine Learning', 'Anomaly Detection', 'Data Analysis'],
+        link: 'https://github.com/tanu-04/your-anomaly-detection-repo' // Placeholder: Please update with your actual GitHub link if available
+    },
+    {
+        title: 'Recommendation System: Collaborative Filtering',
+        description: 'Implemented a recommendation system using collaborative filtering techniques to suggest items or content to users.',
+        tags: ['Machine Learning', 'Recommendation Systems', 'Collaborative Filtering'],
+        link: 'https://github.com/tanu-04/your-recommendation-system-repo' // Placeholder: Please update with your actual GitHub link if available
+    }
 ];
 
 

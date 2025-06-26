@@ -1,50 +1,39 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaJava, FaPython, FaJs, FaGitAlt, FaAws, FaDocker } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiExpress, SiPostgresql, SiCplusplus, SiTensorflow, SiPytorch, SiGooglecloud } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import { FaPython, FaJava, FaGitAlt } from "react-icons/fa";
+import { SiCplusplus, SiTensorflow, SiOpencv, SiGooglecloud } from "react-icons/si";
 import { DiLinux } from "react-icons/di";
 
 const skillsData = [
   // Programming Languages
-  { name: 'C++ (DSA)', icon: <SiCplusplus size={32} />, category: 'Languages' },
-  { name: 'Java', icon: <FaJava size={32} />, category: 'Languages' },
+  { name: 'C++', icon: <SiCplusplus size={32} />, category: 'Languages' },
   { name: 'Python', icon: <FaPython size={32} />, category: 'Languages' },
-  { name: 'JavaScript', icon: <FaJs size={32} />, category: 'Languages' },
+  { name: 'Java (Intermediate)', icon: <FaJava size={32} />, category: 'Languages' },
   
-  // Frontend
-  { name: 'React', icon: <FaReact size={32} />, category: 'Frontend' },
-  { name: 'HTML5/CSS3', icon: <div className="text-2xl">🖥️</div>, category: 'Frontend' },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss size={32} />, category: 'Frontend' },
+  // Developer Tools
+  { name: 'Git/GitHub', icon: <FaGitAlt size={32} />, category: 'Tools' },
+  { name: 'VS Code', icon: <div className="text-2xl">💻</div>, category: 'Tools' },
   
-  // Backend
-  { name: 'Node.js', icon: <FaNodeJs size={32} />, category: 'Backend' },
-  { name: 'Express.js', icon: <SiExpress size={32} />, category: 'Backend' },
-  { name: 'REST APIs', icon: <TbApi size={32} />, category: 'Backend' },
+  // Technical Skills
+  { name: 'Computer Vision', icon: <div className="text-2xl">👁️</div>, category: 'Technical' },
+  { name: 'Machine Learning', icon: <SiTensorflow size={32} />, category: 'Technical' },
+  { name: 'OpenCV', icon: <SiOpencv size={32} />, category: 'Technical' },
+  // { name: 'YOLO (v5/v8)', icon: <SiYolo size={32} />, category: 'Technical' },
+  { name: 'ROS', icon: <div className="text-2xl">🤖</div>, category: 'Technical' },
+  { name: 'Onboard Computers', icon: <div className="text-2xl">🖥️</div>, category: 'Technical' },
   
-  // Databases
-  { name: 'MongoDB', icon: <SiMongodb size={32} />, category: 'Databases' },
-  { name: 'PostgreSQL', icon: <SiPostgresql size={32} />, category: 'Databases' },
+  // Fundamentals
+  { name: 'Data Structures', icon: <div className="text-2xl">📊</div>, category: 'Fundamentals' },
+  { name: 'Operating Systems', icon: <DiLinux size={32} />, category: 'Fundamentals' },
+  { name: 'Data Networking', icon: <div className="text-2xl">🌐</div>, category: 'Fundamentals' },
+  { name: 'Linux Kernel', icon: <DiLinux size={32} />, category: 'Fundamentals' },
   
-  // Cloud & DevOps
-  { name: 'AWS', icon: <FaAws size={32} />, category: 'Cloud' },
-//   { name: 'Azure', icon: <SiAzuredevops size={32} />, category: 'Cloud' },
+  // Cloud
   { name: 'Google Cloud', icon: <SiGooglecloud size={32} />, category: 'Cloud' },
-  { name: 'Git', icon: <FaGitAlt size={32} />, category: 'Cloud' },
-  { name: 'Docker', icon: <FaDocker size={32} />, category: 'Cloud' },
-  { name: 'Linux', icon: <DiLinux size={32} />, category: 'Cloud' },
-  
-  // AI/ML
-  { name: 'TensorFlow', icon: <SiTensorflow size={32} />, category: 'AI/ML' },
-  { name: 'PyTorch', icon: <SiPytorch size={32} />, category: 'AI/ML' },
-  
-  // Networking
-  { name: 'TCP/IP', icon: <div className="text-2xl">🌐</div>, category: 'Networking' },
-  { name: 'Wireshark', icon: <div className="text-2xl">🔍</div>, category: 'Networking' },
 ];
 
 const SkillCard = ({ name, icon, delay }) => (
   <motion.div 
-    className="flex items-center p-4 rounded-xl shadow-lg bg-neutral-800 dark:bg-neutral-800 border border-neutral-900 hover:border-pale-gold transition-all duration-300 cursor-pointer"
+    className="flex items-center p-4 rounded-xl shadow-lg bg-neutral-800 border border-neutral-900 hover:border-pale-gold transition-all duration-300 cursor-pointer"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
@@ -56,7 +45,7 @@ const SkillCard = ({ name, icon, delay }) => (
     }}
   >
     <div className="mr-4 text-pale-gold">{icon}</div>
-    <h3 className="text-lg font-medium dark:text-white">{name}</h3>
+    <h3 className="text-lg font-medium text-white">{name}</h3>
   </motion.div>
 );
 
@@ -79,7 +68,7 @@ const Skills = () => {
         {categories.map((category) => (
           <div key={category} className="mb-8">
             <motion.h3 
-              className="text-2xl font-bold mb-4 text-white dark:text-white"
+              className="text-2xl font-bold mb-4 text-white"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

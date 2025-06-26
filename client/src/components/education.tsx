@@ -2,8 +2,8 @@ import { motion, delay } from "framer-motion";
 import { section, h2, div, map } from "framer-motion/client";
 
 const educationDetails = [
-    { degree: 'B.E. Computer Science', institution: 'Ramaiah Institute of Technology', years: '2020 - 2024', description: 'CGPA - 8.52' },
-    { degree: 'Upper Secondary Graduation', institution: 'Kendriya Vidyalaya DRDO', years: '2020', description: 'Percentage - 93.0%' },
+    { degree: 'B.E. - Computer Science and Engineering', institution: 'Ramaiah Institute of Technology, Bengaluru', years: 'CGPA - 9.1', description: '' },
+    { degree: 'Upper Secondary Graduation', institution: 'A\'s Steward Morris School, Bhilwara, Rajasthan', years: 'Percentage - 92.0', description: '' },
 ];
 
 const EducationCard = ({ degree, institution, years, description, delay }) => (
